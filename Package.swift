@@ -1,13 +1,13 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
+let platforms: [SupportedPlatform] = [.iOS(.v15)]
+
 let package = Package(
     name: "FIDO2_SPM",
-    platforms: [
-        .iOS(.v15),
-    ],
+    platforms: platforms,
     products: [
         .library(
             name: "FIDO2_SPM",
